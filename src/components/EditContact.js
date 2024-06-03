@@ -1,10 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 function EditContact() {
+  const { id } = useParams();
+
   return (
     <div className='container'>
-          <h4 className='text-dark mt-3 text-center'>Edit contact</h4>
+          <h4 className='text-dark mt-3 text-center'>Edit contact {id}</h4>
       <div className='row my-3 justify-content-center'>
         <div className='col-6'>
           <form className='p-3 shadow'>
